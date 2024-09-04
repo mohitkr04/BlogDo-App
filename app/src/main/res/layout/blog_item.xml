@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="264dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="9dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/txtUserDP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/txtUserDP"
+            android:text="User Name"
+            android:textSize="16.sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUserName"
+            android:layout_toRightOf="@id/txtUserDP">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="16/05/2024"
+                android:textSize="14.sp" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/txtDate"
+                android:text="12:00 PM"
+                android:textAlignment="textEnd"
+                android:textSize="14.sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUserDP"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
+            android:maxLines="2"
+            android:text="Please Start Writing Better Git Comits"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@id/txtTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.03"
+            android:lineHeight="22sp"
+            android:maxLines="4"
+            android:text="Hello I am Mohit and presenting here my blog app which will introduces as BlogDo. App . This is just a beginning of my android adventure. Just follow me and do some support for the future updates."
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/imgLike"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtBlog"
+            android:layout_alignStart="@+id/txtBlog"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="351dp"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/icon__2_" />
+
+        <ImageButton
+            android:id="@+id/imgLike2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtBlog"
+            android:layout_alignStart="@+id/txtBlog"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="349dp"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/icon__1_" />
+
+        <ImageButton
+            android:id="@+id/imgSave"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtBlog"
+            android:layout_alignStart="@+id/txtBlog"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="298dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/imgLike"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/combined_shape__5_" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
